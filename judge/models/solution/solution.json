@@ -15,6 +15,9 @@
     "language":{
         "type":"string"
     },
+    "time":{
+        "type" : "number"
+    },
     "result":{
         "type":"string"
     },

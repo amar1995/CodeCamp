@@ -7,6 +7,7 @@ const router = express.Router();
 
 router.get('/:id',(req,res)=>{
      Solution.findOne({'id':req.params.id},function(err,solution){
+       console.log(req.param.id);
        if(err){
           res.send(err)
        }else if(!solution){

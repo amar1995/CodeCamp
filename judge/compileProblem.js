@@ -4,12 +4,6 @@ const path = require('path');
 const fs = require('fs')
 const buffer = require('buffer')
 
-async function lsExample() {
-  const { stdout, stderr } = await exec('ls');
-  console.log('stdout:', stdout);
-  console.log('stderr:', stderr);
-}
-
 //Compile program and check for error if okay the run it
 
 const compileProblem= async (lang , filename)=>{

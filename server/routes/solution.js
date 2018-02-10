@@ -16,11 +16,12 @@ var upload  = multer({dest:'solutions/'})
 var originalname = 'solution';
 router.post('/',upload.single(originalname),async (req,res)=>{
     if (req.file) {
-      var count =await Solution.getObjcount(req.body.username,req.body.code);
+     // var count =await Solution.getObjcount(req.body.username,req.body.code);
+     console.log(req.file);
       var solution = new Solution({ 
           code:req.body.code,
           username:req.body.username,
-          id:req.body.code+req.body.username+count,
+          id:req.body.code+req.body.username,
           language:req.body.language.toLowerCase(),
           description:new Buffer(fs.readFileSync(req.file.path)).toString('base64'),
           submitted_on:new Date()
