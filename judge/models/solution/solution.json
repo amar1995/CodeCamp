@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "id":{
         "type":"string",
@@ -32,4 +33,37 @@
     "description":{
         "type":"string"
     }
+=======
+{
+    "id":{
+        "type":"string",
+        "unique":true
+    },
+    "code":{
+        "type":"string"
+    },
+    "username":{
+        "type":"string"
+    },
+    "submitted_on":{
+        "type":"date"
+    },
+    "language":{
+        "type":"string"
+    },
+    "result":{
+        "type":"string"
+    },
+    "score":{
+        "type":"number",
+        "default":0
+    },
+    "status":{
+        "type":"string",
+        "default":""
+    },
+    "description":{
+        "type":"string"
+    }
+>>>>>>> upstream/master
 }
